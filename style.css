@@ -172,6 +172,7 @@ aside .caja-btnCopia {
     margin: 10px 40px;
 }
 
+
 @media (min-width: 360px) and (max-width: 600px) {
     .container {
         display: flex;
