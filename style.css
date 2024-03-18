@@ -176,6 +176,7 @@ aside .caja-btnCopia {
 @media (max-width: 600px) {
     body {
         width: 100%;
+        min-height: 250px;
     }
     
     .container {
@@ -185,7 +186,7 @@ aside .caja-btnCopia {
     }
     .contenedor-cajatexto {
         width: 100%;
-        height: 97vh;
+        
         border: 1px solid pink;
     }
 
@@ -200,11 +201,10 @@ aside .caja-btnCopia {
     }
 
     .btn-encriptar {
-        width: 25%;
+        min-width: 25%;
     }
     
     .btn-desencriptar {
-        width: 25%;
+        min-width: 25%;
     }
-    
 }
