@@ -173,8 +173,13 @@ aside .caja-btnCopia {
 }
 
 
-@media (min-width: 360px) and (max-width: 600px) {
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    
     .container {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
