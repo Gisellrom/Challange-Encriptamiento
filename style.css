@@ -2,15 +2,12 @@
     padding: 0px;
     margin: 0px;
     font-family: "Inter", sans-serif;
-    
 }
 
 body {
     background-color: #f4f4fc;
-    
     width: 100%;
     height: 97vh;
-    border: 1px solid red;
 }
 
 .container {
@@ -21,12 +18,10 @@ body {
 .contenedor-cajatexto {
     width: 70%;
     height: 97vh;
-    border: 1px solid pink;
 }
 
 header {
     width: 100%;
-    border: 1px solid blue;
 }
 
 .logo {
@@ -35,7 +30,6 @@ header {
 
 main {
     width: 100%;
-    border: 1px solid blue;
 }
 
 .cajaTexto{
@@ -49,7 +43,7 @@ main {
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
+    border: none;
 }
 
 .cajaTexto::placeholder {
@@ -58,14 +52,12 @@ main {
 
 .caja-Alert-btn {
     width: 100%;
-    border: 1px solid blue;
 }
 
 .caja-alerta {
     margin: 20px 30px;
     display: flex;
     color: #495057;
-    border: 1px solid blue;
 }
 
 .caja-alerta > p {
@@ -74,7 +66,6 @@ main {
 
 .caja-btn {
     width: 100%;
-    border: 1px solid blue;
 }
 
 .btn-encriptar {
@@ -111,19 +102,16 @@ main {
     background-color: white;
     border-radius: 24px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid black;
 }
 
 aside {
     width: 100%;
-    border: 1px solid black;
-    
 }
 
 aside .caja-textoEncriptado {
     width: 100%;
     font-size: 18px;
-    border: 1px solid green;
+    border: none;
     color: #0A3871;
     font-size: 24px;
     font-family: "Inter", sans-serif;
@@ -132,30 +120,25 @@ aside .caja-textoEncriptado {
 aside .caja-img img {
     width: 100%;
     min-height: 350px;
-    border: 1px solid green;
 }
 
 aside .caja-mensajes {
     width: 100%;
-    border: 1px solid green;
 }
 
 .caja-mensajes h3 {
     margin: 10px;
     text-align: center;
-    border: 1px solid green;
 }
 
 .caja-mensajes p {
     margin: 10px;
-    border: 1px solid green;
     text-align: center;
 }
 
 
 aside .caja-btnCopia {
     width: 100%;
-    border: 1px solid green;
     text-align: center;
 }
 
@@ -186,8 +169,6 @@ aside .caja-btnCopia {
     }
     .contenedor-cajatexto {
         width: 100%;
-        
-        border: 1px solid pink;
     }
 
     .contenedor-resultado{
@@ -197,7 +178,6 @@ aside .caja-btnCopia {
         background-color: white;
         border-radius: 24px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        border: 1px solid black;
     }
 
     .btn-encriptar {
