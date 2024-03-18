@@ -17,7 +17,7 @@
         </header>
         <main>
             <div>
-                <textarea class="cajaTexto" id="" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+                <textarea class="cajaTexto" id="cajaTexto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
             </div>
             <div>
                 <div class="caja-alerta"> 
@@ -26,11 +26,8 @@
                         Solo letras minúsculas y sin acentos
                     </p>
                 </div>
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
-                <div class="caja-botones">
-                    
-                </div>
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </main>   
     </section>
@@ -39,17 +36,17 @@
     <section class="contenedor-resultado">
         <aside>
             <div>
-                <textarea class="caja-textoEncriptado" id="" cols="30" rows="10" placeholder="texto encriptado"></textarea>
+                <textarea class="caja-textoEncriptado" id="textoEncriptado" cols="30" rows="10"></textarea>
             </div>
             <div class="caja-img">
-                <img src="./img/chico.png" alt="chico">
+                <img id="chico" src="./img/chico.png" alt="chico">
             </div>
             <div>
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que deseees encriptar o desencriptar</p>
+                <h3 id="tituloNoEncontrado">Ningún mensaje fue encontrado</h3>
+                <p id="parrafo">Ingresa el texto que deseees encriptar o desencriptar</p>
             </div>
             <div>
-                <button class="btn-Copia">Copiar</button>
+                <button class="btn-Copia" onclick="copiar()">Copiar</button>
             </div>
         </aside>
     </section>
