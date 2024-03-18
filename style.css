@@ -1,5 +1,4 @@
 * {
-    border: 1px solid red;
     padding: 0px;
     margin: 0px;
     font-family: "Inter", sans-serif;
@@ -10,12 +9,11 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 97vh; 
+    height: 97vh;
 }
 .contenedor-cajatexto {
     width: 70%;
     height: 97vh;
-    
 }
 
 header {
@@ -57,11 +55,10 @@ main {
 
 main .caja-botones {
     width: 100%;
-    
 }
 
 .btn-encriptar {
-    width: 400px;
+    width: 24.5%;
     height: 50px;
     padding: 10px 10px;
     border-radius: 24px;
@@ -74,7 +71,7 @@ main .caja-botones {
 }
 
 .btn-desencriptar {
-    width: 400px;
+    width: 24.5%;
     height: 50px;
     padding: 10px 10px;
     border-radius: 24px;
@@ -89,4 +86,62 @@ main .caja-botones {
 
 .contenedor-resultado{
     width: 30%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 24px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.caja-textoEncriptado {
+    width: 80%;
+    font-size: 16px;
+    border: none;
+}
+
+.contenedor-resultado p {
+    margin: 10px;
+}
+
+.contenedor-resultado h3 {
+    margin: 10px;
+}
+
+.contenedor-resultado img {
+    width: 100%;
+}
+
+.contenedor-resultado .btn-Copia {
+    width: 200px;
+    height: 50px;
+    padding: 10px 10px;
+    border-radius: 24px;
+    border-color: #0A3871;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 40px;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 97vh;
+    }
+
+    .contenedor-resultado {
+        width: 100%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
 }
