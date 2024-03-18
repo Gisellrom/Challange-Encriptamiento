@@ -10,46 +10,53 @@
     <title>Challange Encriptador</title>
 </head>
 <body>
-    <!--Ingresar texto-->
-    <section class="contenedor-cajatexto">
-        <header>
-            <img class="logo" src="./img/logo.png" alt="logo">
-        </header>
-        <main>
-            <div>
-                <textarea class="cajaTexto" id="cajaTexto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
-            </div>
-            <div>
-                <div class="caja-alerta"> 
-                    <img src="./img/icono.png" alt="alerta">
-                    <p for="alerta">
-                        Solo letras minúsculas y sin acentos
-                    </p>
+    <div class="container">
+        <section class="contenedor-cajatexto">
+            <header>
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </header>
+            <main>
+                <div>
+                    <textarea class="cajaTexto" id="cajaTexto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
                 </div>
-                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-            </div>
-        </main>   
-    </section>
-
-    <!-- Encriptar-Desencriptar-->
-    <section class="contenedor-resultado">
-        <aside>
-            <div>
-                <textarea class="caja-textoEncriptado" id="textoEncriptado" cols="30" rows="10"></textarea>
-            </div>
-            <div class="caja-img">
-                <img id="chico" src="./img/chico.png" alt="chico">
-            </div>
-            <div>
-                <h3 id="tituloNoEncontrado">Ningún mensaje fue encontrado</h3>
-                <p id="parrafo">Ingresa el texto que deseees encriptar o desencriptar</p>
-            </div>
-            <div>
-                <button class="btn-Copia" onclick="copiar()">Copiar</button>
-            </div>
-        </aside>
-    </section>
+                <div class="caja-Alert-btn">
+                    <div class="caja-alerta"> 
+                        <img src="./img/icono.png" alt="alerta">
+                        <p for="alerta">
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                    </div>
+                    <div class="caja-btn">
+                        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                    
+                    
+                </div>
+            </main>   
+        </section>
+    
+        <!-- Encriptar-Desencriptar-->
+        <section class="contenedor-resultado">
+            <aside>
+                <div>
+                    <textarea class="caja-textoEncriptado" id="textoEncriptado" cols="30" rows="6"></textarea>
+                </div>
+                <div class="caja-img">
+                    <img id="chico" src="./img/chico.png" alt="chico">
+                </div>
+                <div class="caja-mensajes">
+                    <h3 id="tituloNoEncontrado">Ningún mensaje fue encontrado</h3>
+                    <p id="parrafo">Ingresa el texto que deseees encriptar o desencriptar</p>
+                </div>
+                <div class="caja-btnCopia">
+                    <button class="btn-Copia" onclick="copiar()">Copiar</button>
+                </div>
+            </aside>
+        </section>
+    </div>
+    <!--Ingresar texto-->
+    
     <script src="script.js"></script>
 </body>
 </html>

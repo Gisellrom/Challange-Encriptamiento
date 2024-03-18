@@ -2,27 +2,40 @@
     padding: 0px;
     margin: 0px;
     font-family: "Inter", sans-serif;
+    
 }
 
 body {
     background-color: #f4f4fc;
-    display: flex;
-    justify-content: space-between;
+    
     width: 100%;
     height: 97vh;
+    border: 1px solid red;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contenedor-cajatexto {
     width: 70%;
     height: 97vh;
+    border: 1px solid pink;
 }
 
 header {
     width: 100%;
-    padding: 10px;
+    border: 1px solid blue;
+}
+
+.logo {
+    margin: 10px;
 }
 
 main {
     width: 100%;
+    border: 1px solid blue;
 }
 
 .cajaTexto{
@@ -36,29 +49,36 @@ main {
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
-    border: none;
+    border: 1px solid blue;
 }
 
 .cajaTexto::placeholder {
     color: #0A3871;
 }
 
+.caja-Alert-btn {
+    width: 100%;
+    border: 1px solid blue;
+}
+
 .caja-alerta {
-    margin: 20px 40px;
+    margin: 20px 30px;
     display: flex;
-    color: #495057
+    color: #495057;
+    border: 1px solid blue;
 }
 
 .caja-alerta > p {
     padding-left: 10px;
 }
 
-main .caja-botones {
+.caja-btn {
     width: 100%;
+    border: 1px solid blue;
 }
 
 .btn-encriptar {
-    width: 24.5%;
+    width: 35%;
     height: 50px;
     padding: 10px 10px;
     border-radius: 24px;
@@ -67,11 +87,11 @@ main .caja-botones {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin: 10px 40px;
+    margin: 10px 20px;
 }
 
 .btn-desencriptar {
-    width: 24.5%;
+    width: 35%;
     height: 50px;
     padding: 10px 10px;
     border-radius: 24px;
@@ -80,41 +100,67 @@ main .caja-botones {
     background-color: #D8DFE8;
     font-size: 16px;
     cursor: pointer;
-    margin: 10px 40px;
+    margin: 10px 20px;
     
 }
 
 .contenedor-resultado{
     width: 30%;
+    margin: 40px;
     padding: 25px;
     background-color: white;
     border-radius: 24px;
-    margin: 25px;
-    display: flex;
-    justify-content: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
-.caja-textoEncriptado {
-    width: 80%;
-    font-size: 16px;
-    border: none;
-}
-
-.contenedor-resultado p {
-    margin: 10px;
-}
-
-.contenedor-resultado h3 {
-    margin: 10px;
-}
-
-.contenedor-resultado img {
+aside {
     width: 100%;
+    border: 1px solid black;
+    
 }
 
-.contenedor-resultado .btn-Copia {
-    width: 200px;
+aside .caja-textoEncriptado {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid green;
+    color: #0A3871;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+aside .caja-img img {
+    width: 100%;
+    min-height: 350px;
+    border: 1px solid green;
+}
+
+aside .caja-mensajes {
+    width: 100%;
+    border: 1px solid green;
+}
+
+.caja-mensajes h3 {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid green;
+}
+
+.caja-mensajes p {
+    margin: 10px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+
+aside .caja-btnCopia {
+    width: 100%;
+    border: 1px solid green;
+    text-align: center;
+}
+
+.btn-Copia {
+    width: 60%;
     height: 50px;
     padding: 10px 10px;
     border-radius: 24px;
@@ -126,22 +172,33 @@ main .caja-botones {
     margin: 10px 40px;
 }
 
-@media screen and (max-width:480px) {
-    body {
+@media (min-width: 375px) and (max-width: 600px) {
+    .container {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        height: 97vh;
     }
-
-    .contenedor-resultado {
+    .contenedor-cajatexto {
         width: 100%;
+        height: 97vh;
+        border: 1px solid pink;
     }
 
-    .btn-encriptar,
-    .btn-desencriptar{
-        width: 48%;
-        border-radius: 16px;
+    .contenedor-resultado{
+        width: 100%;
+        margin: 40px;
+        padding: 25px;
+        background-color: white;
+        border-radius: 24px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
     }
 
+    .btn-encriptar {
+        width: 25%;
+    }
+    
+    .btn-desencriptar {
+        width: 25%;
+    }
+    
 }
