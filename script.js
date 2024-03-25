@@ -4,7 +4,7 @@ function encriptar(){
     let parrafo = document.getElementById("parrafo");
     let imgChico = document.getElementById("chico");
     
-    var regex = /^[a-z\s]*$/;
+    var regex = /^[a-z\s!¡¿?]*$/i;
 
     // Verificar si el texto coincide con la expresión regular
     if (regex.test(texto)) {
