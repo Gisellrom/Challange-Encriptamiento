@@ -26,6 +26,9 @@
 
 <h1 align="center"> :unlock: Challange decodificador :lock: </h1>
 
+![decodificador](https://github.com/Gisellrom/Challange-Encriptamiento/assets/100894396/59c04e01-f5fb-4f38-8ed2-2f8d689415b5)
+
+
 ## Descripción del proyecto
 🚀 [Prueba el proyecto](https://gisellrom.github.io/Challange-Encriptamiento/) 🚀
 <p>
@@ -53,7 +56,7 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 ## Estado del proyecto
 :heavy_check_mark: Terminado :heavy_check_mark:
 
-Al concluir el reto obtuve la siguiente insignía:
+Al concluir el reto, obtuve la siguiente insignía por entregarlo en tiempo y con los elementos y funcionalidades que se solicitaban:
 
 ![insignia](https://github.com/Gisellrom/Challange-Encriptamiento/assets/100894396/011fbf85-d218-4a12-9752-27c8273616c9)
 
